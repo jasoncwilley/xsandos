@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bootstrap 101 Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+     <link href="css/main.css" rel="stylesheet">
+     <script
+     			  src="https://code.jquery.com/jquery-3.3.1.js"
+     			  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+     			  crossorigin="anonymous">
+    </script>
+
+  </head>
+    <body>
+  <div class="grid-container">
+  <div class="side-a"></div>
+  <div class="sider-b"></div>
+  <div class="header">
+  <h1>Tic Tac Toes</h2>
+</div>
+  <div class="gamearea">
+
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+
+
+
+  </div>
+  <div class="stats">
+  <a>Stat Area</a></div>
+</div>
+
+<script>
+var player = "x";
+
+$('li').one("click", function() {
+  $(this).addClass(player);
+  if (player == "x") {
+    player = "o";
+  } else {
+    player = "x";
+  }
+});
+
+</script>
+
+  </body>
+</html>
