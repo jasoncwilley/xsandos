@@ -1,22 +1,51 @@
-
 .grid-container {
   display: grid;
-  grid-template-columns: 100px 300px 300px 300px 100px;
-  grid-template-rows: 100px 300px 300px 300px 68px;
-  grid-template-areas: "side-a header header header sider-b" "side-a gamearea gamearea stats sider-b" "side-a gamearea gamearea stats sider-b" "side-a gamearea gamearea stats sider-b" ". . . . .";
+  grid-template-columns: 75px 700px 249px;
+  grid-template-rows: 75px 690px;
+  grid-template-areas: "side-1 header stats" "side-1 gamearea stats";
 }
 
-.side-a { grid-area: side-a; }
+.side-1 { grid-area: side-1; }
 
-.sider-b { grid-area: sider-b; }
+.stats { grid-area: stats; }
 
 .header { grid-area: header; }
 
 .gamearea { grid-area: gamearea; }
 
-.stats { grid-area: stats; }
+.player1 {
+  font-size: 45px;
+  text-align: center;
+  margin-top: 50px;
+  margin-right: 60px;
+}
 
-
+.player2 {
+    margin-right: 60px;
+  font-size: 45px;
+  text-align: center;
+  margin-top: 20px;
+}
+.scoreboard {
+  margin-top: 25px;
+  font-size: 25px;
+  width: 220px;
+  height: 220px;
+  background-color: lightgray;
+}
+#counter {
+  height: 50px;
+  width:50px;
+  background: lightblue;
+}
+.gameswon {
+  padding-top: 15px;
+  font-size: 25px:
+}
+.score {
+  padding-top: 25px;
+  font-size: 25px;
+}
 .x {
   background-image: url('http://i63.tinypic.com/6pz2qg.jpg');
   background-size: 180px Auto;
